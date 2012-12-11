@@ -1,0 +1,1 @@
+This application allows you to build multiple choice quizes.  You can then take the quizes to assist with studying a specific topic.
