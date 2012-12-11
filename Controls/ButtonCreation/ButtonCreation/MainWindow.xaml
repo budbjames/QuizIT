@@ -1,0 +1,52 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+	x:Class="ButtonCreation.MainWindow"
+	x:Name="Window"
+	Title="MainWindow"
+	Width="754" Height="555" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
+	<Window.Resources>
+		<Storyboard x:Key="OnMouseEnter1">
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)" Storyboard.TargetName="button">
+				<EasingColorKeyFrame KeyTime="0:0:20" Value="#00787878"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="button">
+				<EasingColorKeyFrame KeyTime="0:0:01" Value="White"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Panel.Background).(SolidColorBrush.Color)" Storyboard.TargetName="button1">
+				<EasingColorKeyFrame KeyTime="0" Value="#01808080"/>
+			</ColorAnimationUsingKeyFrames>
+			<ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(TextElement.Foreground).(SolidColorBrush.Color)" Storyboard.TargetName="button1">
+				<EasingColorKeyFrame KeyTime="0" Value="White"/>
+			</ColorAnimationUsingKeyFrames>
+		</Storyboard>
+	</Window.Resources>
+
+	<Grid x:Name="LayoutRoot">
+		<Grid.RowDefinitions>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+		<Rectangle Fill="#FF272727" HorizontalAlignment="Left" Height="97.5" Margin="32.5,22.5,0,0" VerticalAlignment="Top" Width="97.5" OpacityMask="#79000000"/>
+		<Rectangle Fill="#FF4B4B4B" HorizontalAlignment="Left" Height="97.5" Margin="130,120,0,0" VerticalAlignment="Top" Width="97.5" OpacityMask="#79000000"/>
+		<Rectangle Fill="#FF5A5A5A" HorizontalAlignment="Left" Margin="227.5,219,0,200.5" Width="97.5" OpacityMask="#79000000"/>
+		<Rectangle Fill="#FF838383" Height="97.5" Margin="325,0,315.5,103" VerticalAlignment="Bottom" OpacityMask="#79000000"/>
+		<TextBlock HorizontalAlignment="Left" Height="97.5" Margin="146.5,111.5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="97.5" Foreground="White" FontFamily="Segoe WP Black" FontSize="80" Text="Q"/>
+		<TextBlock HorizontalAlignment="Left" Height="97.5" Margin="244,114.5,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="97.5" Foreground="White" FontFamily="Segoe WP Black" FontSize="80" Text="U"/>
+		<TextBlock Height="97.5" Margin="320.5,113,320,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe WP Black" FontSize="80" Text="I"/>
+		<TextBlock Height="97.5" Margin="0,113,266,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="White" FontFamily="Segoe WP Black" FontSize="80" Text="Z" HorizontalAlignment="Right" Width="97.5"/>
+		<TextBlock HorizontalAlignment="Left" Margin="266.5,204.5,0,215" TextWrapping="Wrap" Width="97.5" Foreground="White" FontFamily="Segoe WP Black" FontSize="80" Text="I"/>
+		<TextBlock Margin="332.5,204.5,308,215" TextWrapping="Wrap" Foreground="White" FontFamily="Segoe WP Black" FontSize="80" Text="T"/>
+		<Button x:Name="button" Content="Start Quiz" HorizontalAlignment="Right" Height="76" Margin="0,0,126,5" VerticalAlignment="Bottom" Width="114" Foreground="#FF1A1A1A" FontSize="14.667" FontWeight="Bold">
+			<Button.Background>
+				<SolidColorBrush Color="#FF787878"></SolidColorBrush>
+			</Button.Background>
+		</Button>
+		<Button x:Name="button1" Content="Close Quiz" HorizontalAlignment="Right" Height="76" Margin="0,0,4,3" VerticalAlignment="Bottom" Width="114" Foreground="#FF1A1A1A" FontSize="14.667" FontWeight="Bold">
+			<Button.Background>
+				<SolidColorBrush Color="#FF787878"></SolidColorBrush>
+			</Button.Background>
+		</Button>		
+	</Grid>
+	
+</Window>
